@@ -1,3 +1,4 @@
+from suma import sumar
 opcion=input("""Dime que opcion quieres
              1- Sumar
              2- Restar
@@ -7,7 +8,12 @@ opcion=input("""Dime que opcion quieres
 
 match opcion:
     case 1:
-        pass
+        num1=input("Dime el primer numero para sumar")
+        num2=input("Dime el segundo numero para sumar")
+        num1=int(num1)
+        num2=int(num2)
+        resultado=num1+num2
+        print(f" El resultado es {resultado}")
     case 2:
         # xxxx
         pass
