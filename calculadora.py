@@ -1,5 +1,6 @@
 from suma import sumar
 from dividir import dividir
+from resta import resta
 opcion=input("""Dime que opcion quieres
              1- Sumar
              2- Restar
@@ -13,13 +14,17 @@ match opcion:
         num2=input("Dime el segundo numero para sumar")
         num1=int(num1)
         num2=int(num2)
-        resultado=num1+num2
+        resultado=sumar(num1,num2)
         print(f" El resultado es {resultado}")
 
         pass
     case 2:
-
-        # xxxx
+        num1=input("Dime el primer numero para restar")
+        num2=input("Dime el segundo numero para restar")
+        num1=int(num1)
+        num2=int(num2)
+        resultado=resta(num1,num2)
+        print(f" El resultado es {resultado}")
         pass
     case 3:
 
