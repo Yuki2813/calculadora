@@ -28,6 +28,8 @@ match opcion:
     case 4:
         num1=input("Dame el primer numero a dividir")
         num2=input("Ahora dame el divisor del primero")
+        num1=int(num1)
+        num2=int(num2)
         resultado=dividir(num1,num2)
         print(f" El resultado es {resultado}")
         pass
