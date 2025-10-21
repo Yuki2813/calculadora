@@ -7,18 +7,24 @@ opcion=input("""Dime que opcion quieres
 
 match opcion:
     case 1:
+
         pass
     case 2:
+
         # xxxx
         pass
     case 3:
+
         pass
         # xxxxx
     case 4:
+
         pass
         # xxxxx
     case 5:
+
         pass
         # xxxx
     case _:
+        
         pass
