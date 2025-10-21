@@ -1,6 +1,7 @@
 from suma import sumar
 from dividir import dividir
 from resta import resta
+from multiplicacion import multiplicacion
 opcion=input("""Dime que opcion quieres
              1- Sumar
              2- Restar
@@ -17,7 +18,7 @@ match opcion:
         resultado=sumar(num1,num2)
         print(f" El resultado es {resultado}")
 
-        pass
+        
     case 2:
         num1=input("Dime el primer numero para restar")
         num2=input("Dime el segundo numero para restar")
@@ -25,11 +26,14 @@ match opcion:
         num2=int(num2)
         resultado=resta(num1,num2)
         print(f" El resultado es {resultado}")
-        pass
+        
     case 3:
-
-        pass
-        # xxxxx
+        num1=input("Dime el primer numero para restar")
+        num2=input("Dime el segundo numero para restar")
+        num1=int(num1)
+        num2=int(num2)
+        resultado=multiplicacion(num1,num2)
+        print(f" El resultado es {resultado}")
     case 4:
         num1=input("Dame el primer numero a dividir")
         num2=input("Ahora dame el divisor del primero")
@@ -37,12 +41,11 @@ match opcion:
         num2=int(num2)
         resultado=dividir(num1,num2)
         print(f" El resultado es {resultado}")
-        pass
-        # xxxxx
+        
+       
     case 5:
-
-        pass
-        # xxxx
+        print("Saliendo de la calculadora")
+        
     case _:
-
-        pass
+        print("El valor indicado no esta entre las opciones dadas")
+        
