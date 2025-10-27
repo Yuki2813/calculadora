@@ -8,11 +8,12 @@ opcion=input("""Dime que opcion quieres
              3-Multiplicar
              4-Dividir
              5-Salir""")
+opcion=int(opcion)
 
 match opcion:
     case 1:
-        num1=input("Dime el primer numero para sumar")
-        num2=input("Dime el segundo numero para sumar")
+        num1=input("Dime el primer numero para sumar ")
+        num2=input("Dime el segundo numero para sumar ")
         num1=int(num1)
         num2=int(num2)
         resultado=sumar(num1,num2)
@@ -20,23 +21,23 @@ match opcion:
 
         
     case 2:
-        num1=input("Dime el primer numero para restar")
-        num2=input("Dime el segundo numero para restar")
+        num1=input("Dime el primer numero para restar ")
+        num2=input("Dime el segundo numero para restar ")
         num1=int(num1)
         num2=int(num2)
         resultado=resta(num1,num2)
         print(f" El resultado es {resultado}")
         
     case 3:
-        num1=input("Dime el primer numero para restar")
-        num2=input("Dime el segundo numero para restar")
+        num1=input("Dime el primer numero para restar ")
+        num2=input("Dime el segundo numero para restar ")
         num1=int(num1)
         num2=int(num2)
         resultado=multiplicacion(num1,num2)
         print(f" El resultado es {resultado}")
     case 4:
-        num1=input("Dame el primer numero a dividir")
-        num2=input("Ahora dame el divisor del primero")
+        num1=input("Dame el primer numero a dividir ")
+        num2=input("Ahora dame el divisor del primero ")
         num1=int(num1)
         num2=int(num2)
         resultado=dividir(num1,num2)
@@ -44,8 +45,8 @@ match opcion:
         
        
     case 5:
-        print("Saliendo de la calculadora")
+        print("Saliendo de la calculadora ")
         
     case _:
-        print("El valor indicado no esta entre las opciones dadas")
+        print("El valor indicado no esta entre las opciones dadas ")
         
