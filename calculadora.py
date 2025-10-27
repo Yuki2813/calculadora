@@ -40,8 +40,13 @@ match opcion:
         num2=input("Ahora dame el divisor del primero ")
         num1=int(num1)
         num2=int(num2)
-        resultado=dividir(num1,num2)
-        print(f" El resultado es {resultado}")
+        try:
+            resultado=dividir(num1,num2)
+            print(f" El resultado es {resultado}")
+        except ZeroDivisionError:
+            print("No se puede dividir por cero")
+        
+        
         
        
     case 5:
